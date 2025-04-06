@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Shortlisted Candidates</title></head>
+<body>
+    <h2>JD Summary</h2>
+    <p>{{ jd_summary }}</p>
+
+    <h2>Shortlisted Candidates</h2>
+    <ul>
+        {% for c in candidates %}
+            <li>{{ c.name }} - {{ c.email }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Generated Emails</h2>
+    <ul>
+        {% for email in emails %}
+            <li><pre>{{ email }}</pre></li>
+        {% endfor %}
+    </ul>
+
+    <br><a href="/">← Back</a>
+</body>
+</html>

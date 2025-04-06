@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Recruitment Assistant</title>
+</head>
+<body>
+    <h1>Upload JD and Resumes</h1>
+    <form method="POST" action="/process" enctype="multipart/form-data">
+        <label>Upload JD (PDF):</label>
+        <input type="file" name="jd_pdf" required><br><br>
+        <label>Upload Resumes (PDFs):</label>
+        <input type="file" name="resumes" multiple required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
