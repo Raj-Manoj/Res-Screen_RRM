@@ -1,3 +1,5 @@
-
-flask
+Flask
 PyPDF2
+nltk
+spacy
+pandas
