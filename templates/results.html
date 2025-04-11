@@ -1,20 +1,22 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Shortlisted Candidates</title>
+    <title>Results</title>
 </head>
 <body>
+    <h1>JD Summary</h1>
+    <p>{{ jd_summary }}</p>
     <h2>Shortlisted Candidates</h2>
     <ul>
         {% for candidate in candidates %}
-        <li>{{ candidate['name'] }} - {{ candidate['skills'] }}</li>
+            <li>{{ candidate['name'] }} - {{ candidate['email'] }}</li>
         {% endfor %}
     </ul>
-    <h2>Generated Emails</h2>
+    <h2>Email Suggestions</h2>
     <ul>
         {% for email in emails %}
-        <li><pre>{{ email }}</pre></li>
+            <li>{{ email }}</li>
         {% endfor %}
     </ul>
 </body>
